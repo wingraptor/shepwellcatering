@@ -1,0 +1,38 @@
+<div class="row pt-md-4">
+  <% if(item.image) { %>
+  <div class="col-12 col-md-5 col-lg-4 offset-lg-1">
+    <img class="img-fluid cover-image" src="<%- url_for(item.image) %>" alt="<%-
+    item.name || "Untitled" %>">
+  </div>
+  <% } %>
+  <div class="col-12 col-md-6 offset-md-1 mt-5 mt-md-3">
+    <div class="post-page text-center">
+      <h1><%- item.name || "Untitled" %></h1>
+      <span class="price">$<%= item.price %></span>
+    </div>
+
+    <%- item.content %> <% if (item.price) { %>
+    <div class="buy-button text-center mt-4">
+      <!-- Commented Out Markup for snipcart -->
+      <!--
+        <button class="snipcart-add-item"
+        data-item-id="<%- item.id %>"
+        data-item-name="<%- item.name %>"
+        data-item-price="<%- item.price %>"
+        data-item-image="<%- url_for(item.image) %>"
+        data-item-url="<%- item.permalink %>">Add to Cart</button>
+      -->
+      <!-- Jotform Place Order Button -->
+      <a
+        href="javascript:void( window.open( 'https://form.jotform.co/83297591661872', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) )"
+      >
+        Place Order
+      </a>
+    </div>
+    <% } %>
+    
+    <!-- JustComments Script and Div -->
+      <div class="just-comments" data-apikey="393dcf9d-f125-430b-9a70-7daa3ab7afd1" ></div>
+      <script async src="https://just-comments.com/w.js"></script>  
+  </div>
+</div>

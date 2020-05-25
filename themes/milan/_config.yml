@@ -1,0 +1,35 @@
+# Header
+menu:
+  Home: /
+  How To Order: /How-To-Order
+  Blog: /Blog
+  Contact: /Contact
+  About: /About
+header_text: Craft Your Beard
+button_text: Browse Products
+header_image: images/background3.jpg
+logo_image: images/logo3.png
+
+# Favicon
+favicon_url: images/favicon.ico
+
+# Default Image for Posts
+default_image: images/default.jpg
+
+# Snipcart API Key: https://app.snipcart.com/register
+snipcart_api_key: 
+
+# Google Analytics Tracking ID
+google_analytics: UA-106607596-1
+
+# Social Accounts
+email_url:
+twitter_url: 
+facebook_url: https://www.facebook.com/pages/category/Health-Beauty/Artisan-Beards-478616525853677/
+instagram_url: https://www.instagram.com/artisanbeards246
+linkedin_url:
+dribbble_url:
+github_url:
+googleplus_url:
+behance_url:
+fivehundredpx_url:
